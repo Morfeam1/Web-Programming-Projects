@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.navbar {
+  list-style-type: none;
+  background-color: #4682B4;
+  border:2px solid #4F61A1;
+}
+
+.navop {
+  background-color:#4682B4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border-right: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #F0F8FF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #E0FFFF;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .navop {
+  background-color: #6A5ACD;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+
+<div class="dropdown" style="float:left;">
+	<div class="navop"><a  style="color:white; text-decoration: none;" href="#">Home</a></div>
+</div>
+
+<div class="dropdown" style="float:left;">
+  <div class="navop">Download</div>
+  <div class="dropdown-content">
+  <a href="#">Download for Windows</a>
+  <a href="#">Dowload for Mac</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:left;">
+  <div class="navop">About</div>
+  <div class="dropdown-content">
+  <a href="#">Our Strategy</a>
+  <a href="#">Quality Of Life</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:none;">
+  <div class="navop">FAQ</div>
+  <div class="dropdown-content">
+  <a href="#">General Info</a>
+  <a href="#">Q and A Forums</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;border-left: 1px solid #bbb;">
+  <div class="navop">Contact Info</div>
+  <div class="dropdown-content">
+  <a href="#">Sales Team</a>
+  <a href="#">Marketing</a>
+  <a href="#">Customer Support</a>
+  </div>
+</div>
+
+</div>
+
+<h1>CSS NavBar Assignment</h1>
+<p>Name: Matthew Morfea <br>
+Date: 8/29/20 <br>
+Class: CPS493_03 Web Programming <br>
+Making a CSS Drop down Menu / HTML page</p>
+</body>
+</html>
